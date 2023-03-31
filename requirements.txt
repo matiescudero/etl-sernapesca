@@ -1,0 +1,5 @@
+pandas
+shapely
+sqlalchemy
+psycopg2
+pyodbc

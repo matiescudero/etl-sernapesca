@@ -1,0 +1,9 @@
+bin/*
+lib/*
+pyvenv.cfg
+__pycache__/
+<<<<<<< HEAD
+log/*
+=======
+config.json
+>>>>>>> 5373dc10bdddb7ecbc4c7ce2aa2fba865c66b3c6

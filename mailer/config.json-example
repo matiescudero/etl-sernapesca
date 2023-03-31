@@ -1,0 +1,21 @@
+{
+    "output_html": "mail.html",
+    "link_visor": "",
+    "contacto": "",
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_username": "",
+    "smtp_password": "",
+    "smtp_subject": "Cambio de estado de toxicidad Área PSMB",
+    "to_email": "",
+    "db_host": "",
+    "db_port": 5432,
+    "db_username": "",
+    "db_password": "",
+    "db_name": "",
+    "ssh_username": "",
+    "ssh_password": "",
+    "ssh_ip": "",
+    "ssh_port": "",
+    "is_local_db": 1
+}

@@ -1,0 +1,7 @@
+﻿tipo;nm_toxina;grupo;lim_cont;lim_tox;unidad;detalle
+Lipofílicas;Dinofisistoxinas;DTX;0.001;160;ug/Kg;DTX1 - DTX2
+VPM;Saxitoxina;VPM;30;80;ug/100 gr;
+VAM;Acido Domoico;VAM;0.5;20;ug/gr;
+Lipofílicas;Yesotoxinas;YTX;1.9;3.75;ug/gr;YTX - homo YTX - 45 OH YTX - 45 OH homo YTX
+Lipofílicas;Azaspirácidos;AZA;0.001;160;ug/Kg;AZA1 - AZA2 - AZA3
+Lipofílicas;Pectenotoxinas Grupo AO;PTX_AO;20;160;ug/Kg;PTX1 - PTX2 - AO

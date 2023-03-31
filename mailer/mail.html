@@ -1,0 +1,129 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Informativo</title>
+    <style type="text/css">
+        body {
+            margin:0 auto;
+            padding: 0;
+            min-width: 100%;
+            font-family: sans-serif;
+        }
+
+        table {
+            margin: 50px 0 50px 0;
+        }
+
+        td {
+            width: 200px;
+        }
+
+        .content {
+            font-size: 22pt;
+            line-height: 40px;
+            margin: 10px;
+            padding-bottom: 10px;
+        }
+
+        .no-responder {
+            color: gray;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            line-height: 15px;
+        }
+
+        table,
+        th,
+        td,
+        caption {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .link-visor-text {
+            margin-bottom: 50px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .space {
+            white-space: nowrap;
+        }
+
+        .cell-space {
+            margin: 4px;
+        }
+
+        .no-responder-cont {
+            width: 800px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .content {
+                font-size: 11pt;
+                line-height: 30px;
+            }
+
+            .no-responder {
+                line-height: 15px;
+            }
+
+            table {
+                margin: 20px 0 50px 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="content">
+            <p>
+                Se notifica que las siguientes Áreas PSMB han presentado cambios en sus valores toxicológicos.
+            </p>
+        </div>
+
+        <div class="content">
+            <table cellspacing="0" cellpadding="0">
+                <thead>
+                    <caption class="bold">Áreas PSMB</caption>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bold space"><p class="cell-space">Nombre área</p></td>
+                        <td class="bold space"><p class="cell-space">Código área</p></td>
+                        <td class="bold space"><p class="cell-space">Nuevo estado</p></td>
+                        <td class="bold space"><p class="cell-space">Causal</p></td>
+                    </tr>
+                    {% for row in rows %}
+                    <tr>
+                        <td><p class="cell-space">{{ row.area_name }}</p></td>
+                        <td><p class="cell-space">{{ row.area_code }}</p></td>
+                        <td><p class="cell-space">{{ row.value }}</p></td>
+                        <td><p class="cell-space">{{ row.causal }}</p></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="link-visor-text content">
+            Para mayor detalle puede ser visualizado en {{ link_visor }}
+        </div>
+
+        <div class="no-responder-cont">
+            <small class="no-responder">El presente mensaje es sólo de carácter informativo, por favor no responder. Para mayor información y/o consultas comunicarse con {{ contacto }}</small>
+        </div>
+    </div>
+</body>
+
+</html>
